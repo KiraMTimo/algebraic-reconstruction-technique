@@ -20,7 +20,8 @@ for i = 1:n
     
     if (bfig)
         figure(1); colormap gray;
-        imagesc(x); title(i); drawnow();
+        imagesc(x); title([num2str(i) ' / ' num2str(n)]);
+        drawnow();
     end
 end
 
