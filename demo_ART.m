@@ -77,7 +77,7 @@ colormap(gray(256));
 
 suptitle('Algebraic Reconstruction Technique (ART)');
 subplot(221);   imagesc(x,     	wndImg); 	axis image off;     title('ground truth');
-subplot(222);   imagesc(x_full, wndImg);   	axis image off;     title(['full-dose_{view : ', num2str(VIEW) '}']);
-subplot(223);   imagesc(x_low,  wndImg);   	axis image off;     title({['low-dose_{view : ', num2str(VIEW) '}'], ['MSE : ' num2str(mse_x_low, '%.4e')], ['PSNR : ' num2str(psnr_x_low, '%.4f')], ['SSIM : ' num2str(ssim_x_low, '%.4f')]});
-subplot(224);   imagesc(x_art,  wndImg);  	axis image off;     title({['recon_{ART}'], ['MSE : ' num2str(mse_x_art, '%.4e')], ['PSNR : ' num2str(psnr_x_art, '%.4f')], ['SSIM : ' num2str(ssim_x_art, '%.4f')]});
+subplot(222);   imagesc(x_full, wndImg);   	axis image off;     title(['full-dose_{FBP, view : ', num2str(VIEW) '}']);
+subplot(223);   imagesc(x_low,  wndImg);   	axis image off;     title({['low-dose_{FBP, view : ', num2str(VIEW) '}'], ['MSE : ' num2str(mse_x_low, '%.4e')], ['PSNR : ' num2str(psnr_x_low, '%.4f')], ['SSIM : ' num2str(ssim_x_low, '%.4f')]});
+subplot(224);   imagesc(x_art,  wndImg);  	axis image off;     title({['recon_{ART, view : ', num2str(VIEW) '}'], ['MSE : ' num2str(mse_x_art, '%.4e')], ['PSNR : ' num2str(psnr_x_art, '%.4f')], ['SSIM : ' num2str(ssim_x_art, '%.4f')]});
 
