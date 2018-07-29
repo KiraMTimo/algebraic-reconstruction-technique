@@ -21,7 +21,7 @@ VIEW    = 360;
 THETA   = linspace(0, 180, VIEW + 1);   THETA(end) = [];
 
 A       = @(x) radon(x, THETA);
-AT      = @(y) iradon(y, THETA, 'none', N);
+AT      = @(y) iradon(y, THETA, 'none', N)/(pi/(2*length(THETA)));;
 AINV    = @(y) iradon(y, THETA, N);
 
 %% DATA GENERATION
