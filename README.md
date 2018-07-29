@@ -5,7 +5,7 @@ Algebraic Reconstruction Technique (ART)
 - https://en.wikipedia.org/wiki/Algebraic_reconstruction_technique
 
 ## Algebraic Reconstruction Technique (ART)
-![asdf](https://en.wikipedia.org/wiki/File:Algebraic_Reconstruction_Technique_-_animated.gif)
+![](https://en.wikipedia.org/wiki/File:Algebraic_Reconstruction_Technique_-_animated.gif)
 
         x^(k+1) = x^(k) + lambda_(k) * AT( y - A( x ) ) / AT( A( ones(size(x)) ) )
 
