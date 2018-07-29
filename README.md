@@ -7,7 +7,7 @@ Algebraic Reconstruction Technique (ART)
 ## Algebraic Reconstruction Technique (ART)
 The `algebraic reconstruction technique (ART)` is a class of iterative algorithms used in computed tomography. 
 
-An advantage of ART over other reconstruction methods ( such as `filtered backprojection` which is deterministic method ) is that it is relatively easy to incorporate prior knowledge into the reconstruction process.
+An advantage of ART over other reconstruction methods ( such as `filtered backprojection (FBP)` which is deterministic method ) is that it is relatively easy to incorporate prior knowledge into the reconstruction process.
 
         x^(k+1) = x^(k) + lambda_(k) * AT( y - A( x ) ) / AT( A( ones(size(x)) ) )
         
